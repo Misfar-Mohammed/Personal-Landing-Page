@@ -146,19 +146,29 @@ app.use((req, res) => {
 
 // ─── 5. START THE SERVER ──────────────────────────────────────────────────────
 /**
- * process.env.PORT is set automatically by Render (and other hosting platforms).
+ * process.env.PORT is set automatically by Render / Railway / other hosts.
  * We fall back to port 3000 for local development.
- * '0.0.0.0' means "listen on all network interfaces" — required for Render.
+ * '0.0.0.0' means "listen on all network interfaces".
+ *
+ * For Vercel: we export the app as a module (serverless function).
+ * The app.listen() block only runs when you start the server locally
+ * with `node server.js` or `npm start`.
  */
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, '0.0.0.0', () => {
-    console.log('╔══════════════════════════════════════════════╗');
-    console.log('║       Misfar Portfolio Server Started        ║');
-    console.log('╠══════════════════════════════════════════════╣');
-    console.log(`║  Local URL : http://localhost:${PORT}           ║`);
-    console.log(`║  Port      : ${PORT}                            ║`);
-    console.log('║  Status    : Running ✓                       ║');
-    console.log('╚══════════════════════════════════════════════╝');
-});
+// Only start the HTTP server when running locally (not on Vercel)
+if (process.env.VERCEL !== '1') {
+    app.listen(PORT, '0.0.0.0', () => {
+        console.log('╔══════════════════════════════════════════════╗');
+        console.log('║       Misfar Portfolio Server Started        ║');
+        console.log('╠══════════════════════════════════════════════╣');
+        console.log(`║  Local URL : http://localhost:${PORT}           ║`);
+        console.log(`║  Port      : ${PORT}                            ║`);
+        console.log('║  Status    : Running ✓                       ║');
+        console.log('╚══════════════════════════════════════════════╝');
+    });
+}
+
+// Export the app for Vercel's serverless runtime
+module.exports = app;
 
