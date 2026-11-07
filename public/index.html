@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rahumathulla Misfar Mohammed – Informatics Engineering Student at Nusa Putra University. Aspiring Software Developer and Web Development Enthusiast." />
+    <meta name="keywords" content="Misfar Mohammed, portfolio, informatics engineering, web developer, Nusa Putra University" />
+    <meta name="author" content="Rahumathulla Misfar Mohammed" />
+
+    <!-- Open Graph (for sharing on social media) -->
+    <meta property="og:title" content="Misfar Mohammed | Informatics Engineering Student" />
+    <meta property="og:description" content="Personal portfolio of Rahumathulla Misfar Mohammed – Informatics Engineering Student, Aspiring Developer, Creative Designer." />
+    <meta property="og:type" content="website" />
+
+    <title>Misfar Mohammed | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     NAVIGATION BAR
+═══════════════════════════════════════════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+        <!-- Logo / Brand -->
+        <a href="#home" class="navbar__logo">
+            <span class="navbar__logo-icon">M</span>
+            <span class="navbar__logo-text">Misfar<span class="accent">.</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+            <a href="#about"      class="navbar__link">About</a>
+            <a href="#skills"     class="navbar__link">Skills</a>
+            <a href="#projects"   class="navbar__link">Projects</a>
+            <a href="#education"  class="navbar__link">Education</a>
+            <a href="#experience" class="navbar__link">Experience</a>
+            <a href="#services"   class="navbar__link">Services</a>
+            <a href="#contact"    class="navbar__link navbar__link--cta">Contact</a>
+        </nav>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+    <div class="container hero__inner">
+        <!-- Left: Text Content -->
+        <div class="hero__content" data-aos="fade-right">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                Available for Opportunities
+            </div>
+
+            <h1 class="hero__heading">
+                Hi, I'm <br />
+                <span class="gradient-text">Rahumathulla<br />Misfar Mohammed</span>
+            </h1>
+
+            <p class="hero__subtitle">
+                Informatics Engineering Student &nbsp;|&nbsp; Aspiring Software Developer &nbsp;|&nbsp; Creative Thinker
+            </p>
+
+            <p class="hero__description">
+                I build digital experiences, explore new technologies, and turn creative ideas into practical solutions.
+            </p>
+
+            <!-- Info Chips -->
+            <div class="hero__chips">
+                <span class="chip"><i class="fas fa-university"></i> Nusa Putra University</span>
+                <span class="chip"><i class="fas fa-map-marker-alt"></i> Indonesia</span>
+                <span class="chip"><i class="fas fa-flag"></i> Sri Lankan</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hero__buttons">
+                <a href="#projects" class="btn btn--primary">
+                    <i class="fas fa-rocket"></i>
+                    Explore My Projects
+                </a>
+                <a href="#contact" class="btn btn--secondary">
+                    <i class="fas fa-envelope"></i>
+                    Contact Me
+                </a>
+                <a href="/Misfar_Mohammed_CV.pdf" download="Misfar_Mohammed_CV.pdf" class="btn btn--ghost">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Abstract Tech Illustration (SVG) -->
+        <div class="hero__illustration" data-aos="fade-left">
+            <div class="hero__illustration-wrapper">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hero__svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3563E9;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#8067E8;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8067E8;stop-opacity:0.3" />
+                            <stop offset="100%" style="stop-color:#3563E9;stop-opacity:0.1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                            <feMerge>
+                                <feMergeNode in="coloredBlur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Background circle -->
+                    <circle cx="250" cy="250" r="220" fill="url(#grad2)" />
+
+                    <!-- Central Monitor / Screen -->
+                    <rect x="130" y="150" width="240" height="160" rx="12" ry="12" fill="white" stroke="url(#grad1)" stroke-width="2.5" filter="url(#glow)" />
+                    <!-- Screen content lines -->
+                    <rect x="150" y="170" width="80" height="8" rx="4" fill="#3563E9" opacity="0.8" />
+                    <rect x="150" y="186" width="140" height="6" rx="3" fill="#E2E8F0" />
+                    <rect x="150" y="200" width="110" height="6" rx="3" fill="#E2E8F0" />
+                    <rect x="150" y="214" width="130" height="6" rx="3" fill="#E2E8F0" />
+                    <!-- Code block visual -->
+                    <rect x="150" y="232" width="60" height="6" rx="3" fill="#8067E8" opacity="0.7" />
+                    <rect x="218" y="232" width="40" height="6" rx="3" fill="#3563E9" opacity="0.5" />
+                    <rect x="150" y="246" width="90" height="6" rx="3" fill="#E2E8F0" />
+                    <rect x="150" y="260" width="70" height="6" rx="3" fill="#8067E8" opacity="0.4" />
+                    <!-- Monitor stand -->
+                    <rect x="230" y="310" width="40" height="20" rx="4" fill="#CBD5E1" />
+                    <rect x="210" y="328" width="80" height="8" rx="4" fill="#CBD5E1" />
+
+                    <!-- Floating code card - top right -->
+                    <g transform="translate(340, 100)">
+                        <rect width="120" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1.5" filter="url(#glow)" />
+                        <rect x="10" y="12" width="30" height="6" rx="3" fill="#3563E9" opacity="0.9" />
+                        <rect x="10" y="26" width="90" height="5" rx="2.5" fill="#E2E8F0" />
+                        <rect x="10" y="38" width="70" height="5" rx="2.5" fill="#E2E8F0" />
+                        <rect x="10" y="50" width="50" height="5" rx="2.5" fill="#8067E8" opacity="0.6" />
+                    </g>
+
+                    <!-- Floating card - bottom left -->
+                    <g transform="translate(40, 320)">
+                        <rect width="130" height="75" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1.5" filter="url(#glow)" />
+                        <circle cx="20" cy="20" r="10" fill="url(#grad1)" opacity="0.9" />
+                        <rect x="38" y="14" width="70" height="6" rx="3" fill="#17233D" opacity="0.7" />
+                        <rect x="10" y="40" width="110" height="5" rx="2.5" fill="#E2E8F0" />
+                        <rect x="10" y="52" width="80" height="5" rx="2.5" fill="#E2E8F0" />
+                    </g>
+
+                    <!-- Orbiting dots -->
+                    <circle cx="250" cy="30"  r="8" fill="#3563E9" opacity="0.7" class="orbit-dot" />
+                    <circle cx="460" cy="250" r="6" fill="#8067E8" opacity="0.6" class="orbit-dot" />
+                    <circle cx="250" cy="470" r="8" fill="#3563E9" opacity="0.5" class="orbit-dot" />
+                    <circle cx="40"  cy="250" r="6" fill="#8067E8" opacity="0.7" class="orbit-dot" />
+
+                    <!-- Connecting lines -->
+                    <line x1="250" y1="38"  x2="250" y2="150" stroke="url(#grad1)" stroke-width="1" stroke-dasharray="6,4" opacity="0.4" />
+                    <line x1="452" y1="250" x2="370" y2="250" stroke="url(#grad1)" stroke-width="1" stroke-dasharray="6,4" opacity="0.4" />
+
+                    <!-- Tech labels -->
+                    <text x="68" y="140"  font-family="Inter, sans-serif" font-size="11" fill="#3563E9" font-weight="600" opacity="0.8">HTML</text>
+                    <text x="400" y="80"  font-family="Inter, sans-serif" font-size="11" fill="#8067E8" font-weight="600" opacity="0.8">CSS</text>
+                    <text x="400" y="420" font-family="Inter, sans-serif" font-size="11" fill="#3563E9" font-weight="600" opacity="0.8">Node.js</text>
+                    <text x="30"  y="420" font-family="Inter, sans-serif" font-size="11" fill="#8067E8" font-weight="600" opacity="0.8">Python</text>
+
+                    <!-- Small gear/cog icon (top-left area) -->
+                    <circle cx="100" cy="120" r="18" fill="none" stroke="#8067E8" stroke-width="2" opacity="0.4" stroke-dasharray="4,3" />
+                    <circle cx="100" cy="120" r="8"  fill="#8067E8" opacity="0.2" />
+
+                    <!-- Small diamond shapes -->
+                    <polygon points="430,160 440,170 430,180 420,170" fill="#3563E9" opacity="0.3" />
+                    <polygon points="80,350  90,360  80,370  70,360"  fill="#8067E8" opacity="0.3" />
+                </svg>
+
+                <!-- Floating badge cards around illustration -->
+                <div class="hero__badge-card hero__badge-card--top">
+                    <i class="fas fa-code"></i>
+                    <span>Developer</span>
+                </div>
+                <div class="hero__badge-card hero__badge-card--bottom">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>Designer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll">
+        <a href="#about" class="hero__scroll-link" aria-label="Scroll to About section">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+
+    <!-- Background decorative shapes -->
+    <div class="hero__bg-shape hero__bg-shape--1" aria-hidden="true"></div>
+    <div class="hero__bg-shape hero__bg-shape--2" aria-hidden="true"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ABOUT SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section about" id="about">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">Get to Know Me</span>
+            <h2 class="section__title">About Me</h2>
+            <p class="section__subtitle">A passionate student turning curiosity into code.</p>
+        </div>
+
+        <div class="about__inner">
+            <!-- Left: Avatar + Stats -->
+            <div class="about__visual" data-aos="fade-right">
+                <div class="about__avatar-wrapper">
+                    <div class="about__avatar about__avatar--photo">
+                        <img src="/images/misfar-profile.jpg" alt="Rahumathulla Misfar Mohammed" />
+                    </div>
+                    <div class="about__avatar-ring" aria-hidden="true"></div>
+                </div>
+
+                <!-- Quick stats -->
+                <div class="about__stats">
+                    <div class="about__stat">
+                        <span class="about__stat-num">2025</span>
+                        <span class="about__stat-label">Started University</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-num">3+</span>
+                        <span class="about__stat-label">Projects Built</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-num">1</span>
+                        <span class="about__stat-label">Internship</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Text + Info -->
+            <div class="about__text" data-aos="fade-left">
+                <div class="about__greeting">
+                    <span>👋</span> Hello there!
+                </div>
+                <h3 class="about__name">Rahumathulla Misfar Mohammed</h3>
+
+                <p class="about__bio">
+                    Hello! I'm Rahumathulla Misfar Mohammed, an Informatics Engineering undergraduate student at Nusa Putra University, Indonesia. I am passionate about technology, programming, web development, graphic design, and digital innovation. I enjoy learning new technologies, solving problems, and developing creative digital solutions.
+                </p>
+
+                <!-- Identity tags -->
+                <div class="about__tags">
+                    <span class="tag"><i class="fas fa-graduation-cap"></i> Informatics Engineering Student</span>
+                    <span class="tag"><i class="fas fa-laptop-code"></i> Aspiring Software Developer</span>
+                    <span class="tag"><i class="fas fa-globe"></i> Web Development Enthusiast</span>
+                    <span class="tag"><i class="fas fa-paint-brush"></i> Graphic Designer</span>
+                    <span class="tag"><i class="fas fa-hashtag"></i> Social Media Manager</span>
+                </div>
+
+                <!-- Personal details grid -->
+                <div class="about__details">
+                    <div class="about__detail">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <span class="about__detail-label">Student ID</span>
+                            <span class="about__detail-value">20250040208</span>
+                        </div>
+                    </div>
+                    <div class="about__detail">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <span class="about__detail-label">University</span>
+                            <span class="about__detail-value">Nusa Putra University</span>
+                        </div>
+                    </div>
+                    <div class="about__detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="about__detail-label">Location</span>
+                            <span class="about__detail-value">Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="about__detail">
+                        <i class="fas fa-flag"></i>
+                        <div>
+                            <span class="about__detail-label">Nationality</span>
+                            <span class="about__detail-value">Sri Lankan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__actions">
+                    <a href="#contact" class="btn btn--primary">
+                        <i class="fas fa-paper-plane"></i> Let's Connect
+                    </a>
+                    <a href="#services" class="btn btn--outline">
+                        <i class="fas fa-briefcase"></i> My Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SKILLS SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section skills" id="skills">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">What I Know</span>
+            <h2 class="section__title">Technical Skills</h2>
+            <p class="section__subtitle">Technologies and tools I am learning and working with.</p>
+        </div>
+
+        <!-- Programming Skills -->
+        <div class="skills__group" data-aos="fade-up">
+            <h3 class="skills__group-title">
+                <i class="fas fa-code"></i> Programming &amp; Web Technologies
+            </h3>
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--orange">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">HTML5</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--blue">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">CSS3</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--yellow">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">JavaScript</span>
+                        <span class="skill-card__level skill-card__level--learning">Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--blue-dark">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Python</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--green">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Node.js</span>
+                        <span class="skill-card__level skill-card__level--learning">Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--grey">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">ExpressJS</span>
+                        <span class="skill-card__level skill-card__level--learning">Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--teal">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">MySQL</span>
+                        <span class="skill-card__level skill-card__level--basic">Basic</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--red">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Java</span>
+                        <span class="skill-card__level skill-card__level--basic">Basic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="skills__group" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="skills__group-title">
+                <i class="fas fa-tools"></i> Tools &amp; Other Skills
+            </h3>
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--green-dark">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Microsoft Excel</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--purple">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Canva</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--pink">
+                        <i class="fas fa-vector-square"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Graphic Design</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--blue">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Social Media Management</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--orange">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Data Entry</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card__icon skill-card__icon--teal">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="skill-card__info">
+                        <span class="skill-card__name">Internet Research</span>
+                        <span class="skill-card__level skill-card__level--comfortable">Comfortable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="skills__legend" data-aos="fade-up">
+            <span class="legend-item"><span class="legend-dot legend-dot--comfortable"></span> Comfortable</span>
+            <span class="legend-item"><span class="legend-dot legend-dot--learning"></span> Currently Learning</span>
+            <span class="legend-item"><span class="legend-dot legend-dot--basic"></span> Basic Knowledge</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     PROJECTS SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section projects" id="projects">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">What I've Built</span>
+            <h2 class="section__title">Projects</h2>
+            <p class="section__subtitle">A collection of projects I've developed and am currently working on.</p>
+        </div>
+
+        <div class="projects__grid">
+
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="project-card__header">
+                    <div class="project-card__icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <span class="project-card__status project-card__status--indev">In Development</span>
+                </div>
+                <h3 class="project-card__title">Smart Queue Management System</h3>
+                <p class="project-card__desc">
+                    A web-based queue management application designed to help businesses manage customer queues digitally. Features shop owner registration, automatic QR code generation, and digital queue number management.
+                </p>
+                <ul class="project-card__features">
+                    <li><i class="fas fa-check-circle"></i> Shop owner registration</li>
+                    <li><i class="fas fa-check-circle"></i> Automatic QR code generation</li>
+                    <li><i class="fas fa-check-circle"></i> Digital queue number management</li>
+                    <li><i class="fas fa-check-circle"></i> Customer information management</li>
+                    <li><i class="fas fa-check-circle"></i> Excel export &amp; database integration</li>
+                </ul>
+                <div class="project-card__tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Supabase</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card__header">
+                    <div class="project-card__icon project-card__icon--violet">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <span class="project-card__status project-card__status--completed">Completed</span>
+                </div>
+                <h3 class="project-card__title">Life Tracker Application</h3>
+                <p class="project-card__desc">
+                    A personal activity and fitness tracking application built with Python and Flask. Helps users monitor daily activities, calculate BMI, and export fitness data to Excel for analysis.
+                </p>
+                <ul class="project-card__features">
+                    <li><i class="fas fa-check-circle"></i> Activity tracking</li>
+                    <li><i class="fas fa-check-circle"></i> BMI calculator</li>
+                    <li><i class="fas fa-check-circle"></i> Fitness monitoring</li>
+                    <li><i class="fas fa-check-circle"></i> Excel data export</li>
+                </ul>
+                <div class="project-card__tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">OpenPyXL</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card project-card--featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card__header">
+                    <div class="project-card__icon project-card__icon--gradient">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <span class="project-card__status project-card__status--current">Currently Building</span>
+                </div>
+                <h3 class="project-card__title">Personal Portfolio Website</h3>
+                <p class="project-card__desc">
+                    This very website! A professional portfolio built to showcase my skills, projects, and experience. Also serves as a university assignment demonstrating the use of Node.js and ExpressJS for backend development.
+                </p>
+                <ul class="project-card__features">
+                    <li><i class="fas fa-check-circle"></i> ExpressJS backend server</li>
+                    <li><i class="fas fa-check-circle"></i> Responsive HTML/CSS design</li>
+                    <li><i class="fas fa-check-circle"></i> Working contact form with validation</li>
+                    <li><i class="fas fa-check-circle"></i> Deployed on Render</li>
+                </ul>
+                <div class="project-card__tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">ExpressJS</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     EDUCATION SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section education" id="education">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">My Academic Journey</span>
+            <h2 class="section__title">Education</h2>
+            <p class="section__subtitle">The academic foundation behind my skills and passion.</p>
+        </div>
+
+        <div class="timeline">
+
+            <!-- Education 1 -->
+            <div class="timeline__item" data-aos="fade-up">
+                <div class="timeline__dot timeline__dot--primary"></div>
+                <div class="timeline__card">
+                    <div class="timeline__card-header">
+                        <div class="timeline__icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div>
+                            <span class="timeline__period">2025 – Present</span>
+                            <span class="timeline__badge timeline__badge--active">Current</span>
+                        </div>
+                    </div>
+                    <h3 class="timeline__title">Bachelor's Degree in Informatics Engineering</h3>
+                    <p class="timeline__institution">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Nusa Putra University, Indonesia
+                    </p>
+                    <p class="timeline__desc">
+                        Pursuing a Bachelor's degree in Informatics Engineering. Studying programming fundamentals, web development, networking, algorithms, and software engineering principles.
+                    </p>
+                    <div class="timeline__tags">
+                        <span>Web Development</span>
+                        <span>Programming</span>
+                        <span>Informatics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education 2 -->
+            <div class="timeline__item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline__dot timeline__dot--violet"></div>
+                <div class="timeline__card">
+                    <div class="timeline__card-header">
+                        <div class="timeline__icon timeline__icon--violet">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div>
+                            <span class="timeline__period">2024</span>
+                            <span class="timeline__badge">Completed</span>
+                        </div>
+                    </div>
+                    <h3 class="timeline__title">NVQ Level 04 – Computer Networking</h3>
+                    <p class="timeline__institution">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Technical College Vavuniya, Sri Lanka
+                    </p>
+                    <p class="timeline__desc">
+                        Completed a National Vocational Qualification (NVQ) Level 04 in Computer Networking, covering network infrastructure, hardware configuration, and IT support fundamentals.
+                    </p>
+                    <div class="timeline__tags">
+                        <span>Networking</span>
+                        <span>IT Support</span>
+                        <span>NVQ Level 04</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education 3 -->
+            <div class="timeline__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline__dot"></div>
+                <div class="timeline__card">
+                    <div class="timeline__card-header">
+                        <div class="timeline__icon timeline__icon--grey">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div>
+                            <span class="timeline__period">Completed 2024</span>
+                            <span class="timeline__badge">Completed</span>
+                        </div>
+                    </div>
+                    <h3 class="timeline__title">Secondary Education</h3>
+                    <p class="timeline__institution">
+                        <i class="fas fa-map-marker-alt"></i>
+                        A/An-Noor M.V., Ikkirigollewa, Sri Lanka
+                    </p>
+                    <p class="timeline__desc">
+                        Completed secondary education, building a strong foundation in science and mathematics that led to pursuing higher education in technology.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     EXPERIENCE SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section experience" id="experience">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">My Work History</span>
+            <h2 class="section__title">Work Experience</h2>
+            <p class="section__subtitle">Practical experience gained in a professional IT environment.</p>
+        </div>
+
+        <div class="experience__card" data-aos="fade-up">
+            <div class="experience__left">
+                <div class="experience__company-logo">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="experience__timeline-line" aria-hidden="true"></div>
+            </div>
+            <div class="experience__right">
+                <div class="experience__header">
+                    <div>
+                        <h3 class="experience__role">IT Intern</h3>
+                        <p class="experience__company">Altec IT Solutions</p>
+                    </div>
+                    <div class="experience__meta">
+                        <span class="experience__period">
+                            <i class="fas fa-calendar-alt"></i>
+                            May 2024 – June 2025
+                        </span>
+                        <span class="experience__type">Internship</span>
+                    </div>
+                </div>
+
+                <p class="experience__summary">
+                    Gained practical IT experience at Altec IT Solutions, working across web development, digital content creation, and social media management.
+                </p>
+
+                <div class="experience__responsibilities">
+                    <h4>Key Responsibilities:</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Assisted with website design and development tasks
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Identified and reported website bugs to improve quality
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Supported social media management and content planning
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Assisted with digital content creation
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Gained practical hands-on IT industry experience
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience__skills-used">
+                    <span class="tech-tag">Web Design</span>
+                    <span class="tech-tag">Bug Testing</span>
+                    <span class="tech-tag">Social Media</span>
+                    <span class="tech-tag">Digital Content</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     SERVICES SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section services" id="services">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">What I Offer</span>
+            <h2 class="section__title">Services</h2>
+            <p class="section__subtitle">
+                Freelance services I offer to clients worldwide.
+            </p>
+        </div>
+
+        <div class="services__grid">
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-card__icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3 class="service-card__title">Graphic Design</h3>
+                <p class="service-card__desc">
+                    Creating eye-catching visual content including social media graphics, banners, logos, and digital artwork using tools like Canva.
+                </p>
+                <a href="mailto:contact.misfar@gmail.com" class="service-card__link">
+                    Get in Touch <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="service-card__icon service-card__icon--violet">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3 class="service-card__title">Social Media Management</h3>
+                <p class="service-card__desc">
+                    Managing social media accounts, creating engaging content calendars, posting schedules, and helping grow your online presence organically.
+                </p>
+                <a href="mailto:contact.misfar@gmail.com" class="service-card__link">
+                    Get in Touch <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="service-card__icon service-card__icon--teal">
+                    <i class="fas fa-keyboard"></i>
+                </div>
+                <h3 class="service-card__title">Data Entry &amp; Typing</h3>
+                <p class="service-card__desc">
+                    Accurate and fast data entry, spreadsheet organisation, form filling, and document typing with high attention to detail.
+                </p>
+                <a href="mailto:contact.misfar@gmail.com" class="service-card__link">
+                    Get in Touch <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="service-card__icon service-card__icon--orange">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="service-card__title">Internet Research</h3>
+                <p class="service-card__desc">
+                    Thorough web research, information gathering, competitor analysis, and report writing on a wide range of topics.
+                </p>
+                <a href="mailto:contact.misfar@gmail.com" class="service-card__link">
+                    Get in Touch <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="320">
+                <div class="service-card__icon service-card__icon--green">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="service-card__title">Basic Website Development</h3>
+                <p class="service-card__desc">
+                    Building simple, clean, and responsive websites using HTML, CSS, and JavaScript for personal pages, landing pages, and portfolios.
+                </p>
+                <a href="mailto:contact.misfar@gmail.com" class="service-card__link">
+                    Get in Touch <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Freelance CTA Banner -->
+        <div class="services__cta" data-aos="fade-up">
+            <div class="services__cta-text">
+                <i class="fas fa-handshake" style="color:#FFD700"></i>
+                Available for freelance work — let's collaborate!
+            </div>
+            <a href="mailto:contact.misfar@gmail.com" class="btn btn--primary">
+                <i class="fas fa-paper-plane"></i>
+                Hire Me
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     ACHIEVEMENTS SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section achievements" id="achievements">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">My Progress</span>
+            <h2 class="section__title">Achievements &amp; Milestones</h2>
+            <p class="section__subtitle">Key steps in my professional and academic journey.</p>
+        </div>
+
+        <div class="achievements__grid">
+
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="achievement-card__icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h4 class="achievement-card__title">NVQ Level 04 Completed</h4>
+                <p class="achievement-card__desc">Successfully completed NVQ Level 04 in Computer Networking at Technical College Vavuniya.</p>
+                <span class="achievement-card__year">2024</span>
+            </div>
+
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="80">
+                <div class="achievement-card__icon achievement-card__icon--violet">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h4 class="achievement-card__title">IT Internship Completed</h4>
+                <p class="achievement-card__desc">Completed a professional IT internship at Altec IT Solutions, gaining real-world industry experience.</p>
+                <span class="achievement-card__year">2024–2025</span>
+            </div>
+
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="160">
+                <div class="achievement-card__icon achievement-card__icon--teal">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h4 class="achievement-card__title">Practical Web Design Experience</h4>
+                <p class="achievement-card__desc">Gained hands-on experience assisting with website design and development tasks during internship.</p>
+                <span class="achievement-card__year">2024</span>
+            </div>
+
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="achievement-card__icon achievement-card__icon--green">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h4 class="achievement-card__title">Started University Degree</h4>
+                <p class="achievement-card__desc">Enrolled in Bachelor's Degree in Informatics Engineering at Nusa Putra University, Indonesia.</p>
+                <span class="achievement-card__year">2025</span>
+            </div>
+
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="320">
+                <div class="achievement-card__icon achievement-card__icon--orange">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h4 class="achievement-card__title">Personal Software Projects</h4>
+                <p class="achievement-card__desc">Developed personal software projects independently, including a queue management system and life tracker.</p>
+                <span class="achievement-card__year">2024–2025</span>
+            </div>
+
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="achievement-card__icon achievement-card__icon--blue">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4 class="achievement-card__title">Freelance Portfolio Building</h4>
+                <p class="achievement-card__desc">Building a professional freelance portfolio offering graphic design and digital services to clients worldwide.</p>
+                <span class="achievement-card__year">Ongoing</span>
+            </div>
+
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="480">
+                <div class="achievement-card__icon achievement-card__icon--aws">
+                    <i class="fab fa-aws"></i>
+                </div>
+                <h4 class="achievement-card__title">AWS Student Club — Project &amp; Innovation Team Leader</h4>
+                <p class="achievement-card__desc">Serving as Project and Innovation Team Leader at the AWS Student Club, Nusa Putra University — leading student-driven cloud and technology initiatives.</p>
+                <span class="achievement-card__year">2025 – Present</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     LANGUAGES SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section languages" id="languages">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">Communication</span>
+            <h2 class="section__title">Languages</h2>
+            <p class="section__subtitle">Languages I speak and communicate in.</p>
+        </div>
+
+        <div class="languages__grid">
+
+            <div class="language-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="language-card__flag">🇬🇧</div>
+                <h4 class="language-card__name">English</h4>
+                <p class="language-card__level">Proficient</p>
+                <div class="language-card__dots">
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--half"></span>
+                </div>
+            </div>
+
+            <div class="language-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="language-card__flag">🇱🇰</div>
+                <h4 class="language-card__name">Sinhala</h4>
+                <p class="language-card__level">Native / Fluent</p>
+                <div class="language-card__dots">
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                </div>
+            </div>
+
+            <div class="language-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="language-card__flag">🇮🇩</div>
+                <h4 class="language-card__name">Indonesian</h4>
+                <p class="language-card__level">Basic</p>
+                <div class="language-card__dots">
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="language-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="language-card__flag">🇮🇳</div>
+                <h4 class="language-card__name">Tamil</h4>
+                <p class="language-card__level">Fluent</p>
+                <div class="language-card__dots">
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--filled"></span>
+                    <span class="dot dot--half"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════════════════════════════════════════ -->
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="section__header" data-aos="fade-up">
+            <span class="section__label">Get In Touch</span>
+            <h2 class="section__title">Contact Me</h2>
+            <p class="section__subtitle">Have a question or want to work together? Send me a message.</p>
+        </div>
+
+        <div class="contact__inner">
+
+            <!-- Left: Contact Info -->
+            <div class="contact__info" data-aos="fade-right">
+                <h3 class="contact__info-heading">Let's Connect</h3>
+                <p class="contact__info-desc">
+                    I'm currently open to internships, freelance projects, and collaborations. Feel free to reach out!
+                </p>
+
+                <div class="contact__details">
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="contact__detail-label">Email</span>
+                            <a href="mailto:contact.misfar@gmail.com" class="contact__detail-value contact__detail-value--link">contact.misfar@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="contact__detail-label">Phone</span>
+                            <a href="tel:+94703759561" class="contact__detail-value contact__detail-value--link">+94 703 759 561</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="contact__detail-label">WhatsApp</span>
+                            <a href="https://wa.me/94703759561" target="_blank" rel="noopener noreferrer" class="contact__detail-value contact__detail-value--link">+94 703 759 561</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <span class="contact__detail-label">Location</span>
+                            <span class="contact__detail-value">Indonesia</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__detail">
+                        <div class="contact__detail-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <span class="contact__detail-label">GitHub</span>
+                            <span class="contact__detail-value">github.com/yourusername</span>
+                            <span class="contact__detail-note">(Update with your GitHub)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Response note -->
+                <div class="contact__response-note">
+                    <i class="fas fa-clock"></i>
+                    I typically respond within 24–48 hours.
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact__form-wrapper" data-aos="fade-left">
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+                        <div class="form-input-wrapper">
+                            <i class="fas fa-user form-input-icon"></i>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="form-input"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                                required
+                            />
+                        </div>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                        <div class="form-input-wrapper">
+                            <i class="fas fa-envelope form-input-icon"></i>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-input"
+                                placeholder="your@email.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                        <div class="form-input-wrapper">
+                            <i class="fas fa-tag form-input-icon"></i>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                class="form-input"
+                                placeholder="What is this about?"
+                                required
+                            />
+                        </div>
+                        <span class="form-error" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message <span class="required">*</span></label>
+                        <div class="form-input-wrapper form-input-wrapper--textarea">
+                            <i class="fas fa-comment-dots form-input-icon form-input-icon--textarea"></i>
+                            <textarea
+                                id="message"
+                                name="message"
+                                class="form-input form-textarea"
+                                placeholder="Tell me more about your project, question, or idea..."
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+                        <span class="form-error" id="messageError"></span>
+                        <span class="form-char-count" id="charCount">0 / 2000</span>
+                    </div>
+
+                    <!-- Form alert area -->
+                    <div class="form-alert" id="formAlert" role="alert" aria-live="polite"></div>
+
+                    <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                        <span class="btn-text">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </span>
+                        <span class="btn-loading" style="display:none">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            Sending…
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+
+            <div class="footer__brand">
+                <a href="#home" class="navbar__logo footer__logo">
+                    <span class="navbar__logo-icon">M</span>
+                    <span class="navbar__logo-text">Misfar<span class="accent">.</span></span>
+                </a>
+                <p class="footer__tagline">
+                    Informatics Engineering Student &amp; Aspiring Developer<br />
+                    Nusa Putra University, Indonesia
+                </p>
+                <div class="footer__social">
+                    <a href="https://wa.me/94703759561" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:contact.misfar@gmail.com" class="footer__social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h4 class="footer__links-title">Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__info">
+                <h4 class="footer__links-title">Assignment Info</h4>
+                <p class="footer__info-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    Nusa Putra University
+                </p>
+                <p class="footer__info-item">
+                    <i class="fas fa-id-badge"></i>
+                    Student ID: 20250040208
+                </p>
+                <p class="footer__info-item">
+                    <i class="fas fa-code"></i>
+                    Built with Node.js &amp; ExpressJS
+                </p>
+                <p class="footer__info-item">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    Hosted on Render
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; <span id="currentYear"></span> Rahumathulla Misfar Mohammed. All rights reserved.</p>
+            <p class="footer__bottom-tech">Built with <i class="fas fa-heart" style="color:#E84393"></i> using Node.js &amp; ExpressJS</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Main JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>
+
