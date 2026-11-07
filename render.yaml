@@ -1,0 +1,15 @@
+# render.yaml
+# This file tells Render exactly how to deploy this project.
+# Render automatically reads this file when you connect the repository.
+
+services:
+  - type: web
+    name: misfar-portfolio
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
